@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+header img {
+  padding: 50px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin: 30px;
+}
+
+.section__main {
+  width: 60vw;
+  height: 60vh;
+  background-color: #262626;
+  margin: 100px auto;
+  border-radius: 15px;
+}
+
+.section__main__header a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: ease-in-out 0.2s;
+}
+
+.section__main__header a:hover {
+  border-bottom: 2px solid #0436b9;
+}
+
+.block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.content__main {
+  width: 50%;
+  margin: 50px 100px;
+}
+
+.content__main h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.content__main p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin-bottom: 50px;
+}
+
+.content__main a {
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #0436b8;
+  padding: 15px;
+  color: white;
+  font-size: 1.4rem;
+}
+
+figure img {
+  width: 200px;
+  height: 200px;
+  margin-right: 100px;
+  /* margin: 80px 120px; */
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: visible;
+  }
+
+  li {
+    margin: 10px;
+  }
+
+  .section__main {
+    width: 90vw;
+    height: auto;
+    background-color: #262626;
+    margin: 10px auto;
+    border-radius: 15px;
+  }
+
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .section__main__header {
+    font-size: 0.8rem;
+  }
+
+  .content__main {
+    width: 100vw;
+    margin: 80px 50px;
+  }
+
+  .content__main h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .content__main p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin-bottom: 50px;
+  }
+
+  .content__main a {
+    font-size: 0.8rem;
+  }
+
+  figure {
+    display: none;
+  }
+
+  .copyright {
+    justify-content: baseline;
+    align-items: baseline;
+  }
+}
